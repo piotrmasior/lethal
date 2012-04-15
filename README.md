@@ -59,3 +59,8 @@ bundle exec guard
 
 rails s
 ```
+
+
+#current staging / demo
+
+http://lethal.railsutils.com/
