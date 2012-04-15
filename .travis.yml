@@ -3,5 +3,5 @@ rvm:
   - 1.9.3
 before_script:
   - mysql -e 'create database lethal_test;'
-  - run rake travis:config
+  - rake travis:config
 script: bundle exec rspec spec
