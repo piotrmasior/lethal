@@ -1,7 +1,7 @@
 # Lethal
 [![Build Status](https://secure.travis-ci.org/piotrmasior/lethal.png)](http://travis-ci.org/piotrmasior/lethal)
 
-[![Dependency Status](https://gemnasium.com/piotrmasior/lethal.png?travis)]
+[Dependency Status](https://gemnasium.com/piotrmasior/lethal.png?travis)
 
 * Create your own rvm gemset with and adjust .rvmrc (ruby 1.9.3)
 
