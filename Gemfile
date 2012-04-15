@@ -7,6 +7,13 @@ gem 'unicorn'
 gem 'capistrano'
 gem 'capistrano-ext'
 
+####
+# lethal codebase
+####
+gem 'devise'
+gem 'rails_config'
+
+####
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
