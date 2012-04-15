@@ -1,0 +1,5 @@
+mysql:
+  adapter: mysql2
+  database: lethal_test
+  username: root
+  encoding: utf8
