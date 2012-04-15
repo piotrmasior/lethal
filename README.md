@@ -33,6 +33,7 @@ guard init rspec
 
 ```
 consider change Guardfile
+
 ```
 guard 'spork' do
   watch('config/application.rb')
