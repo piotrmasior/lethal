@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.3.rc2'
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'unicorn'
@@ -16,10 +16,10 @@ gem 'rails_config'
 ####
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'therubyracer', :platform => :ruby
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 end
 
 group :development do
