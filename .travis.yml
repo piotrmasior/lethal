@@ -4,6 +4,6 @@ rvm:
 before_install:
   - gem install bundler
 before_script:
+  - cp config/database.mysql.yml config/database.yml
   - mysql -e 'create database lethal_test;'
-  - rake travis:config
 script: bundle exec rspec spec
