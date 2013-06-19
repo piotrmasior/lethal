@@ -17,19 +17,28 @@ gem 'coffee-script'
 
 ####
 
-group :development do
+group :development, :test do
+  gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
   gem 'guard-spork'
-  gem 'libnotify'
+  gem 'childprocess'
+
+  gem 'ffaker'
+  gem 'simplecov', :require => false
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'ffaker'
-  gem 'factory_girl_rails', :require => false
-  gem 'spork'
-  gem 'simplecov', :require => false
-  gem 'database_cleaner'
+  gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
+
+  gem 'libnotify'
+end
+
+group :doc do
+  gem 'sdoc', :require => false
 end
 

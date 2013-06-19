@@ -29,31 +29,6 @@ rake db:create && rake db:migrate
 sudo apt-get install libnotify-bin
 ```
 
-* Prepare
-
-```
-guard init rspec
-
-```
-consider change Guardfile
-
-```
-guard 'spork' do
-  watch('config/application.rb')
-  watch('config/environment.rb')
-  watch(%r{^config/environments/.*\.rb$})
-  watch(%r{^config/initializers/.*\.rb$})
-  watch('Gemfile')
-  watch('Gemfile.lock')
-  watch('spec/spec_helper.rb') { :rspec }
-  watch('test/test_helper.rb') { :test_unit }
-  watch(%r{features/support/}) { :cucumber }
-end
-
-guard 'rspec', :version => 2, :cli => "--drb --color --format doc", :all_after_pass => false, :all_on_start => false, :keep_failed => false do
-```
-
-
 * Start
 
 ```
