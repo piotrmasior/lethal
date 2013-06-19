@@ -3,11 +3,11 @@
 
 [![Dependency Status](https://gemnasium.com/piotrmasior/lethal.png?travis)](https://gemnasium.com/piotrmasior/lethal)
 
-* Create your own rvm gemset with and adjust .rvmrc (ruby 2.0.0-p195)
+* Using RVM
 
 ```
+rvm install ruby 2.0.0-p195
 rvm gemset create lethal
-echo "rvm use 2.0.0-p195@lethal" > .rvmrc
 gem install bundler --no-ri --no-rdoc
 gem install rails --no-ri --no-rdoc
 bundle install
