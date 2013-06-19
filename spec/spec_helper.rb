@@ -33,6 +33,10 @@ Spork.prefork do
 
     ActiveSupport::Dependencies.clear
 
+    config.order = "random"
+    # Include the Capybara DSL so that specs in spec/requests still work.
+    config.include Capybara::DSL
+
     config.expect_with :rspec do |c|
       c.syntax = :expect
     end
