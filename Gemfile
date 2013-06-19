@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'unicorn'
 gem 'capistrano'
 gem 'capistrano-ext'
+gem 'rvm-capistrano'
 
 ####
 # lethal codebase
