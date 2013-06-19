@@ -15,6 +15,7 @@ gem 'devise', '3.0.0.rc'
 gem 'rails_config'
 gem 'sass-rails', '4.0.0.rc2'
 gem 'coffee-script'
+gem 'uglifier'
 
 ####
 
