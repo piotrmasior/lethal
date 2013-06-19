@@ -1,8 +1,6 @@
 # Lethal
 [![Build Status](https://secure.travis-ci.org/piotrmasior/lethal.png)](http://travis-ci.org/piotrmasior/lethal)
-
 [![Dependency Status](https://gemnasium.com/piotrmasior/lethal.png?travis)](https://gemnasium.com/piotrmasior/lethal)
-
 [![Code Climate](https://codeclimate.com/github/piotrmasior/lethal.png)](https://codeclimate.com/github/piotrmasior/lethal)
 
 * Using RVM
@@ -11,8 +9,9 @@
 rvm install ruby 2.0.0-p195
 rvm gemset create lethal
 gem install bundler --no-ri --no-rdoc
-gem install rails --no-ri --no-rdoc
-bundle install
+git clone https://github.com/piotrmasior/lethal.git
+cd lethal
+bundle
 
 ```
 
