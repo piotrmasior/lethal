@@ -1,6 +1,8 @@
 language: ruby
 rvm:
   - 2.0.0
+before_install:
+  - gem install bundler
 before_script:
   - mysql -e 'create database lethal_test;'
   - rake travis:config
