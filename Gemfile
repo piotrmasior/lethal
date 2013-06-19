@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3.rc2'
+gem 'rails', '4.0.0.rc2'
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'unicorn'
@@ -10,17 +10,10 @@ gem 'capistrano-ext'
 ####
 # lethal codebase
 ####
-gem 'devise' ~> '3.0.0.rc'
+gem 'devise'
 gem 'rails_config'
 
 ####
-
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'therubyracer', :platform => :ruby
-  gem 'uglifier'
-end
 
 group :development do
   gem 'guard-rspec'
