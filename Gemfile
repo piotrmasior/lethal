@@ -12,6 +12,8 @@ gem 'capistrano-ext'
 ####
 gem 'devise'
 gem 'rails_config'
+gem 'sass-rails', '4.0.0.rc2'
+gem 'coffee-script'
 
 ####
 
