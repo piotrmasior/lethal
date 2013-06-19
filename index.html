@@ -4,51 +4,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Lethal by piotrmasior</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/piotrmasior/lethal">Fork On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/piotrmasior/lethal/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/piotrmasior/lethal/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
     <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Lethal</h1>
-          <p>rails 3.2 codebase</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/piotrmasior">piotrmasior</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
-
+      <header>
         <h1>Lethal</h1>
+        <p>rails 4.0.0.rc2 codebase</p>
+
+        <p class="view"><a href="https://github.com/piotrmasior/lethal">View the Project on GitHub <small>piotrmasior/lethal</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/piotrmasior/lethal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/piotrmasior/lethal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/piotrmasior/lethal">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="lethal" class="anchor" href="#lethal"><span class="octicon octicon-link"></span></a>Lethal</h1>
 
 <p><a href="http://travis-ci.org/piotrmasior/lethal"><img src="https://secure.travis-ci.org/piotrmasior/lethal.png" alt="Build Status"></a></p>
 
 <p><a href="https://gemnasium.com/piotrmasior/lethal"><img src="https://gemnasium.com/piotrmasior/lethal.png?travis" alt="Dependency Status"></a></p>
 
 <ul>
-<li>Create your own rvm gemset with and adjust .rvmrc (ruby 1.9.3)</li>
-</ul><pre><code>rvm gemset create lethal
-echo "rvm use 1.9.3@lethal" &gt; .rvmrc
+<li>Using RVM</li>
+</ul><pre><code>rvm install ruby 2.0.0-p195
+rvm gemset create lethal
 gem install bundler --no-ri --no-rdoc
 gem install rails --no-ri --no-rdoc
 bundle install
@@ -69,42 +59,23 @@ rake db:create &amp;&amp; rake db:migrate
 </code></pre>
 
 <ul>
-<li>Prepare</li>
-</ul><pre><code>guard init rspec
-
-</code></pre>
-
-<p>consider change Guardfile</p>
-
-<pre><code>guard 'spork' do
-  watch('config/application.rb')
-  watch('config/environment.rb')
-  watch(%r{^config/environments/.*\.rb$})
-  watch(%r{^config/initializers/.*\.rb$})
-  watch('Gemfile')
-  watch('Gemfile.lock')
-  watch('spec/spec_helper.rb') { :rspec }
-  watch('test/test_helper.rb') { :test_unit }
-  watch(%r{features/support/}) { :cucumber }
-end
-
-guard 'rspec', :version =&gt; 2, :cli =&gt; "--drb --color --format doc", :all_after_pass =&gt; false, :all_on_start =&gt; false, :keep_failed =&gt; false do
-</code></pre>
-
-<ul>
 <li>Start</li>
 </ul><pre><code>bundle exec guard
 
 rails s
 </code></pre>
 
-<h1>current staging / demo</h1>
+<h1>
+<a name="current-staging--demo" class="anchor" href="#current-staging--demo"><span class="octicon octicon-link"></span></a>current staging / demo</h1>
 
 <p><a href="http://lethal.railsutils.com/">http://lethal.railsutils.com/</a></p>
       </section>
-
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/piotrmasior">piotrmasior</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
