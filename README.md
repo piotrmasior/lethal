@@ -3,6 +3,8 @@
 
 [![Dependency Status](https://gemnasium.com/piotrmasior/lethal.png?travis)](https://gemnasium.com/piotrmasior/lethal)
 
+[![Code Climate](https://codeclimate.com/github/piotrmasior/lethal.png)](https://codeclimate.com/github/piotrmasior/lethal)
+
 * Using RVM
 
 ```

@@ -6,4 +6,5 @@ before_install:
 before_script:
   - cp config/database.mysql.yml config/database.yml
   - mysql -e 'create database lethal_test;'
-script: bundle exec rspec spec
+  - rake db:test:prepare
+script: bundle exec rspec spec --no-drb
