@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.0.rc2'
+gem 'rails', '4.0.0'
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'unicorn'
@@ -13,7 +13,7 @@ gem 'rvm-capistrano'
 ####
 gem 'devise', '3.0.0.rc'
 gem 'rails_config'
-gem 'sass-rails', '4.0.0.rc2'
+gem 'sass-rails'
 gem 'coffee-script'
 gem 'uglifier'
 

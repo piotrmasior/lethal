@@ -6,7 +6,7 @@
 * Using RVM
 
 ```
-rvm install ruby 2.0.0-p195
+rvm install ruby 2.0.0-p247
 rvm gemset create lethal
 gem install bundler --no-ri --no-rdoc
 git clone https://github.com/piotrmasior/lethal.git
