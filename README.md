@@ -42,3 +42,9 @@ rails s
 #current staging / demo
 
 http://lethal.railsutils.com/
+
+#production notes
+
+```
+rvm wrapper 2.0.0-p247@lethal lethal unicorn
+```
