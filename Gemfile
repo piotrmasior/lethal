@@ -11,7 +11,7 @@ gem 'rvm-capistrano'
 ####
 # lethal codebase
 ####
-gem 'devise', '3.0.0.rc'
+gem 'devise'
 gem 'rails_config'
 gem 'sass-rails'
 gem 'coffee-script'
